@@ -3,18 +3,22 @@
 import { useRouter } from 'next/navigation';
 
 type NavButtonProps = {
-  to: string;         // 이동할 경로
-  label: string;      // 버튼에 표시할 텍스트
-  className?: string; // (선택) 추가 스타일
+  to: string;
+  label: string;
+  className?: string;
+  onClick?: () => void;
 };
 
-export default function NavButton({ to, label, className }: NavButtonProps) {
+export default function NavButton({ to, label, className, onClick }: NavButtonProps) {
   const router = useRouter();
 
   return (
     <button
-      onClick={() => router.push(to)}
-      className={`button ${className ?? ''}`}  // Tailwind 클래스 'button' 사용
+      onClick={() => {
+        onClick?.();           
+        router.push(to);       
+      }}
+      className={`button ${className ?? ''}`}
     >
       {label}
     </button>
