@@ -1,0 +1,51 @@
+.page-container {
+  padding: 2rem;
+}
+
+.content-row {
+  display: flex;
+  flex-direction: row; 
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.stock-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  flex: 1;
+}
+
+
+.balance-box {
+  width: 360px;
+  max-height: 500px; /* ✅ 너무 길지 않게 */
+  overflow-y: auto;   /* ✅ 스크롤 추가 */
+  padding: 1.2rem;
+  border: 2px solid #111;
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.flex-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.box {
+  flex: 1 1 47%;  /* 혹은 100%로 하면 한 줄 하나씩 */
+  min-width: 350px;  /* 박스가 너무 작아지지 않게 */
+}
+
+
+.balance-card {
+  
+  
+  padding: 6rem;           /* 필요 시 조정 */
+  box-sizing: border-box;  /* padding 포함 계산 */
+}
