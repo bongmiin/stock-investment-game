@@ -1,0 +1,53 @@
+/* components/StockCard.css */
+.stock-card {
+  width: 180px;
+  padding: 1.2rem;
+  background-color: #ffffff;
+  border: 3px solid #111;
+  border-radius: 20px;
+  box-shadow: 3px 3px 0 #00000033;
+  margin: 1.2rem;
+  position: relative;
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  text-align: center;
+  display: inline-block;
+}
+
+.stock-badge {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #64af74;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 0.3rem 0.8rem;
+  border: 2px solid #000;
+  box-shadow: 2px 2px 0 #00000033;
+}
+
+.stock-info {
+  margin-top: 1.6rem;
+}
+
+.stock-name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.stock-detail {
+  font-size: 16px;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.stock-total {
+  font-size: 18px;
+  color: #319e4e;
+  font-weight: bold;
+}

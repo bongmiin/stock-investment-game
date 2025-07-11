@@ -13,14 +13,16 @@ export default function NavButton({ to, label, className, onClick }: NavButtonPr
   const router = useRouter();
 
   return (
-    <button
-      onClick={() => {
-        onClick?.();           
-        router.push(to);       
-      }}
-      className={`button ${className ?? ''}`}
-    >
-      {label}
-    </button>
+    <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '2rem' }}>
+      <button
+        onClick={() => {
+          onClick?.();
+          router.push(to);
+        }}
+        className={`button ${className ?? ''}`}
+      >
+        {label}
+      </button>
+    </div>
   );
 }

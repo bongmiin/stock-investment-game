@@ -1,17 +1,23 @@
 'use client';
 
-import BalanceCard_r1 from '@/components/BalanceCard_r1'; // 💡 라운드 1용 컴포넌트
+import { useEffect, useState } from 'react';
 import NavButton from '@/components/NavButton';
 import StockCard from '@/components/StockCard';
-import { useEffect } from 'react';
+import BalanceCard_r1 from '@/components/BalanceCard_r1';
+
+import './page.css';
 
 const stocks = [
   { id: 1, name: '나무바이오', price: '10만원', qty: '20주', total: '200만원' },
   { id: 2, name: '그린팜', price: '5만원', qty: '40주', total: '200만원' },
   { id: 3, name: 'LOL전자', price: '4만원', qty: '50주', total: '200만원' },
+  { id: 4, name: '나무자동차', price: '20만원', qty: '10주', total: '200만원' },
+  { id: 5, name: '그린에너지', price: '25만원', qty: '8주', total: '200만원' },
 ];
 
 export default function Page() {
+  const [selectedTeam, setSelectedTeam] = useState('1조');
+
   useEffect(() => {
     const saved = sessionStorage.getItem('teamData');
     if (!saved) {
@@ -21,7 +27,7 @@ export default function Page() {
           balance: 10000000,
           valuation: 10000000,
           profitRate: 0,
-          stocks: [], // round1에서 buy 시작하므로 초기값은 빈 배열
+          stocks: [],
         };
       }
       sessionStorage.setItem('teamData', JSON.stringify(teamData));
@@ -29,21 +35,27 @@ export default function Page() {
   }, []);
 
   return (
-    <main className="inner-content">
-      <h1>📈 주식 종목</h1>
+    <main className="page-container">
+      <div className="balance-card">
+      <h1>1라운드 개장</h1>
+
+      <div className="team-buttons">
+        {[1, 2, 3, 4, 5, 6].map((num) => (
+          <button
+            key={num}
+            className={`team-button ${selectedTeam === `${num}조` ? 'active' : ''}`}
+            onClick={() => setSelectedTeam(`${num}조`)}
+          >
+            {num}조
+          </button>
+        ))}
+      </div>
       {stocks.map((stock) => (
         <StockCard key={stock.id} stock={stock} />
-      ))}
-
-      <h1>💰 STEP 3: 잔고 계산</h1>
-      <BalanceCard_r1 teamName="1조" />
-      <BalanceCard_r1 teamName="2조" />
-      <BalanceCard_r1 teamName="3조" />
-      <BalanceCard_r1 teamName="4조" />
-      <BalanceCard_r1 teamName="5조" />
-      <BalanceCard_r1 teamName="6조" />
-
-      <NavButton to="/emoji" label="다음 페이지" className="button" />
+        ))}
+        <BalanceCard_r1 teamName={selectedTeam} />
+        <NavButton to="/emoji" label="1라운드 종료" className="button" />
+      </div>
     </main>
   );
 }

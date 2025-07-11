@@ -1,4 +1,8 @@
+// components/StockCard.tsx
 'use client';
+
+import React from 'react';
+import './StockCard.css';
 
 type Stock = {
   id: number;
@@ -9,17 +13,13 @@ type Stock = {
 };
 
 export default function StockCard({ stock }: { stock: Stock }) {
-  const { id, name, price, qty, total } = stock;
-
   return (
-    <div>
-      <div>
-        {id}
-      </div>
-      <div>
-        <h3>{name}</h3>
-        <p>{price} × {qty}</p>
-        <p>= {total}</p>
+    <div className="stock-card">
+      <div className="stock-badge">{stock.id}</div>
+      <div className="stock-info">
+        <div className="stock-name">{stock.name}</div>
+        <div className="stock-detail">{stock.price} × {stock.qty}</div>
+        <div className="stock-total">= {stock.total}</div>
       </div>
     </div>
   );

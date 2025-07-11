@@ -9,6 +9,55 @@
   --foreground: #171717;
 }
 
+.team-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.team-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #333;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.team-button.active {
+  background-color: #333;
+  color: white;
+}
+
+
+.stock-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+p {
+  font-weight: bold;
+  font-size: 1.3rem;         /* 예: 약 20px */
+  color: #0d2e1b;            /* 진한 초록색 */
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.right-align {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

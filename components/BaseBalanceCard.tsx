@@ -5,6 +5,7 @@ import {
   getTeamHoldings,
   updateTeamHoldings,
 } from '@/utils/session';
+import './BaseBalanceCard.css';
 
 type Props = {
   teamName: string;
@@ -12,7 +13,7 @@ type Props = {
 };
 
 const INITIAL_FUNDS = 10000000;
-const STOCK_NAMES = ['나무바이오', '그린팜', 'LOL전자', '디지털팜', '스마트팜에너지'];
+const STOCK_NAMES = ['나무바이오', '그린팜', 'LOL전자', '나무자동차', '그린에너지'];
 
 export default function BaseBalanceCard({ teamName, stockPrices }: Props) {
   const [quantities, setQuantities] = useState<Record<string, number>>({});
@@ -61,7 +62,7 @@ export default function BaseBalanceCard({ teamName, stockPrices }: Props) {
   };
 
   return (
-    <div style={{ border: '1px solid gray', padding: '1rem', marginBottom: '2rem' }}>
+    <div className="balance-card">
       <h2>{teamName}</h2>
       <p>예수금: {balance.toLocaleString()}원</p>
       <p>총 평가액: {totalValuation.toLocaleString()}원</p>
