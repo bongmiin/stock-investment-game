@@ -29,7 +29,7 @@ export default function Page() {
   }, []);
 
   return (
-    <main>
+    <main className="inner-content">
       <h1>📈 주식 종목</h1>
       {stocks.map((stock) => (
         <StockCard key={stock.id} stock={stock} />

@@ -9,7 +9,7 @@ const stocks = [
 
 export default function Page() {
   return (
-    <main>
+    <main className="inner-content">
       <StockViewer stocks={stocks} />
       <NavButton to="/round1/step3" label="투자 시작" className="button" />
     </main>

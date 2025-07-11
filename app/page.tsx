@@ -5,7 +5,7 @@ import NavButton from '@/components/NavButton';
 export default function Home() {
 
   return (
-    <main>
+    <main className="inner-content">
       <h1>가상 시뮬레이션 투자 게임</h1>
       <p>나도 주식왕!</p>
       <NavButton to="/game-rules" label="게임 규칙"className="button" />

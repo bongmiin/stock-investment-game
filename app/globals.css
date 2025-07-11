@@ -23,8 +23,28 @@
   }
 }
 
+.outer-frame {
+  background-color: #349973; /* 초록색 계열 */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-content {
+  background-color: #f3f8f6; /* 밝은 연두빛 */
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 960px;
+  box-sizing: border-box;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f8f6; /* 이미지와 유사한 연한 회녹색 */
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #333;
 }

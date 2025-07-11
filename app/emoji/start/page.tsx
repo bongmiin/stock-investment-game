@@ -32,7 +32,7 @@ export default function Page() {
   const currentQuestion = questions[current];
 
   return (
-    <main style={{ textAlign: 'center', padding: '2rem' }}>
+    <main style={{ textAlign: 'center', padding: '2rem' }} className="inner-content">
       <h2>이모지 퀴즈</h2>
       <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>
         {currentQuestion.emoji}

@@ -2,7 +2,7 @@ import NavButton from '@/components/NavButton';
 
 export default function Round1Page() {
   return (
-    <main>
+    <main className="inner-content">
       <h1>K뉴스</h1>
       <p>정부의 의료 개혁 시행에 
 대응하여 의료계에서 대대적인 파업에 나섰습니다.

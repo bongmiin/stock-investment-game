@@ -7,7 +7,7 @@ export default function GameRulesPage() {
   const [mode, setMode] = useState<'basic' | 'advanced'>('basic');
 
   return (
-    <main>
+    <main className="inner-content">
       <h1>게임 규칙</h1>
 
       <div style={{ marginBottom: '1rem' }}>
