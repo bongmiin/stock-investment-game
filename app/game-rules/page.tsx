@@ -18,7 +18,7 @@ export default function GameRulesPage() {
       {mode === 'basic' && (
         <div>
           <h2>📘 기본 규칙</h2>
-          <p>여기에 기본 규칙 설명이 들어갑니다.</p>
+          <p>6조로 구성됩니다</p>
         </div>
       )}
 
@@ -28,7 +28,7 @@ export default function GameRulesPage() {
           <p>여기에 고급 규칙 설명이 들어갑니다.</p>
         </div>
       )}
-      <NavButton to="/game/round1" label="라운드 1 시작" className="button" />
+      <NavButton to="/round1" label="라운드 1 시작" className="button" />
     </main>
   );
 }

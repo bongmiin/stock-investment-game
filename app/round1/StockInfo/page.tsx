@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <main>
       <StockViewer stocks={stocks} />
-      <NavButton to="/game/round1/step3" label="투자 시작" className="button" />
+      <NavButton to="/round1/step3" label="투자 시작" className="button" />
     </main>
 
   );
