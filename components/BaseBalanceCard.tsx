@@ -5,7 +5,6 @@ import {
   getTeamHoldings,
   updateTeamHoldings,
 } from '@/utils/session';
-import './BaseBalanceCard.css';
 
 type Props = {
   teamName: string;

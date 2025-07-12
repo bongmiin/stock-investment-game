@@ -72,7 +72,7 @@ export default function MusicQuizPage() {
             다음 노래
           </button>
         ) : (
-          <NavButton to="/round3/news" label="3라운드 개장" className="button" />
+          <NavButton to="/round3/step3" label="3라운드 개장" className="button" />
         )}
       </div>
     </main>

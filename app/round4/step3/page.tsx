@@ -40,9 +40,9 @@ export default function Page() {
             </button>
           ))}
         </div>
-
         <div className="flex-container">
           {/* 수익률 평가 */}
+          <div className="balance-card">
           <div className="box">
             <h2 className="text-4xl font-bold text-green-800 mb-4">모둠별 수익률 평가</h2>
             <p className="text-sm text-right text-gray-600 mb-2">※가상의 게임일 뿐, 현실은 달라요!</p>
@@ -80,12 +80,12 @@ export default function Page() {
               <div className="col-span-2 text-red-600">+171% (+17,050,000원)</div>
             </div>
           </div>
+          </div>
 
-          {/* BalanceCard */}
-          <div className="box">
+      <div>
             <BalanceCard_r4 
             teamName={selectedTeam}  />
-          </div>
+</div>
         </div>
 
         <NavButton to="/" label="메인화면으로" className="button" />

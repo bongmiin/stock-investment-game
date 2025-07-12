@@ -52,7 +52,7 @@ export default function Page() {
         <StockCard key={stock.id} stock={stock} />
         ))}
         <BalanceCard_r2 teamName={selectedTeam} />
-        <NavButton to="/music" label="2라운드 종료" className="button" />
+        <NavButton to="/round3/news" label="2라운드 종료" className="button" />
       </div>
     </main>
   );

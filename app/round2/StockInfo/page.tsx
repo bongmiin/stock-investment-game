@@ -28,7 +28,7 @@ export default function Page() {
   return (
     <main className="inner-content">
       <StockViewer stocks={stocks} />
-      <NavButton to="/round2/step3" label="투자 시작" className="button" />
+      <NavButton to="/emoji" label="미니게임" className="button" />
     </main>
 
   );

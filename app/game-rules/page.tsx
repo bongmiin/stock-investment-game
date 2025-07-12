@@ -20,7 +20,7 @@ export default function GameRulesPage() {
             '6개 조로 앉아주세요',
             '모둠 당 투자자금 10,000,000원(일천만원) 지급',
             '총 3라운드를 진행합니다!',
-            '라운드 종료 후 미니게임을 통해 다음 라운드의 힌트를 들을 수 있습니다',
+            '라운드 개장 전 미니게임을 통해 다음 라운드의 힌트를 들을 수 있습니다',
             '3라운드 종료 후 수익이 가장 많은 팀 우승!',
           ].map((text, idx) => (
             <p key={idx} style={{ border: '2px solid black', padding: '0.5rem', margin: '0.5rem 0', borderRadius: '12px' }}>

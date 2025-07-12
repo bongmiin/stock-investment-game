@@ -59,7 +59,7 @@ export default function Page() {
 
       </div>
 
-      <NavButton to="/round2/news" label="2라운드 개장" className="button" />
+      <NavButton to="/round2/step3" label="2라운드 개장" className="button" />
     </main>
   );
 }
