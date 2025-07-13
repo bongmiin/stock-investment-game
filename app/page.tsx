@@ -9,7 +9,7 @@ export default function Home() {
     <main className="inner-content">
       <p>가상 시뮬레이션 투자 게임</p>
         <Image 
-        src="/title.png" 
+        src="/main.png" 
         alt="나도 주식왕!" 
         width={800} // 필요에 따라 조정
         height={520}
