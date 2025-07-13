@@ -10,14 +10,14 @@ type Question = {
 
 const questions: Question[] = [
   { audio: '/songs/song1.mp3', answer: 'ALLDAY PROJECT - FAMOUS' },
-  { audio: '/songs/song2.mp3', answer: '헤이즈(Heize) - 마지막 너의 인사 (The Last)' },
-  { audio: '/songs/song3.mp3', answer: '릴러말즈 (Leellamarz), TOIL - 후유증 (Feat. 개리)' },
+  { audio: '/songs/song2.mp3', answer: 'QWER - 눈물참기' },
+  { audio: '/songs/song3.mp3', answer: 'aespa (에스파) - Whiplash' },
   { audio: '/songs/song4.mp3', answer: '고경표 - ...사랑했잖아...(2024)' },
-  { audio: '/songs/song5.mp3', answer: 'Adam Levine - Lost Stars' },
+  { audio: '/songs/song5.mp3', answer: 'Woody (우디) - 어제보다 슬픈 오늘' },
   { audio: '/songs/song6.mp3', answer: 'Kendrick Lamar - Not Like Us' },
   { audio: '/songs/song7.mp3', answer: 'Lee Hyori (이효리) - 10 Minutes' },
-  { audio: '/songs/song8.mp3', answer: 'BIBI(비비) - Maybe if(우리가 헤어져야 했던 이유)' },
-  { audio: '/songs/song9.mp3', answer: "CNBLUE(씨엔블루) - Can't Stop" },
+  { audio: '/songs/song8.mp3', answer: '마크툽 (MAKTUB) - 시작의 아이'},
+  { audio: '/songs/song9.mp3', answer: "WOODZ (우즈) - Drowning" },
   { audio: '/songs/song10.mp3', answer: '비투비(BTOB) - 그리워하다' },
 ];
 

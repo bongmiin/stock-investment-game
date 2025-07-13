@@ -12,10 +12,10 @@ const questions: Question[] = [
   { emoji: '🟥🧠🔫💸🧍‍♂️🎮', answer: '오징어 게임' },
   { emoji: '⚰️👻🔍🔮😱', answer: '파묘' },
   { emoji: '👑😢💍🏙❤️', answer: '눈물의 여왕' },
-  { emoji: '🎭🔥🧑‍🏫📺😱🩸', answer: '더 글로리' },
+  { emoji: '🎭🔥🧑‍🏫😱🩸', answer: '더 글로리' },
   { emoji: '📈🎓👩‍👩‍👧‍👧📚😤🏫', answer: '스카이캐슬' },
   { emoji: '🧟‍♂️🚂👩‍👧🪟💥🚪', answer: '부산행' },
-  { emoji: '👩‍💼👗📱💄🔪🩸', answer: '마스크걸' },
+  { emoji: '👩‍💼👗📱🎭💄🔪', answer: '마스크걸' },
   { emoji: '👨‍👩‍👦🧹🏠🍽️🌧️🪜', answer: '기생충' },
   { emoji: '🪂💨🪖🚧❤️', answer: '사랑의 불시착' },
   { emoji: '🎻📚🎓🕰️💔🚶‍♂️', answer: '선재 업고 튀어' }
